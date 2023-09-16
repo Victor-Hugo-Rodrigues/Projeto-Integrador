@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Ttinterphrace&display=swap');
+
+:root {
+    --background-color: black;
+    --primary-color: #5566B8;
+    --secondary-color: #E8AFF6;
+    --text-color: white;
+}
+
+body {
+    font-family: 'Ttinterphrace', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+body::before {
+    content: "";
+    background-image: url('../imgs/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.img-png {
+    width: 40px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: var(--text-color);
+}
+
+.inicio {
+    font-size: 80px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.seta {
+    font-size: 70px;
+    width: 70px;
+    height: 70px;
+}
+
+.work {
+    font-size: 105px;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.mensagem-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: -80px;
+}
+
+.mensagem {
+    font-size: 90px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.icone-sol {
+    width: 40px;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.mensagem-texto {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: left;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.read-more {
+    font-size: 16px;
+    padding: 12px 60px;
+    border-radius: 70px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+    margin-right: 25px;
+    display: inline-block;
+}
+
+.mensagem-container::before {
+    content: '';
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_social_media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.footer-link {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 24px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+
+

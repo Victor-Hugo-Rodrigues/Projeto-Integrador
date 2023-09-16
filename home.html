@@ -5,56 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futuro Remoto</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 
 <body>
     <header>
-      <!--isso  e um comentario-->
-    </header>
-    <nav class="nav-links">
-        <div class="nav-content">
-            <div class="site-title">
-                <a href="index.html">
-                    <img class="img-png" src="./imgs/logo.jpg"  alt="Futuro Remoto Logo" style="width: 80px; height: 80px;">
-                </a>
+        <nav class="nav-links">
+            <div class="nav-content">
+                <div class="site-title">
+                    <a href="home.html">
+                        <h4>Futuro Remoto</h4>
+                    </a>
+                </div>
+                <ul class="nav-link">
+                    <li><a href="./html/quero-trabalhar.html" class="purple-hover">Quero Trabalhar</a></li>
+                    <li><a href="./beneficios.html" class="purple-hover">Benefícios</a></li>
+                    <li><a href="./quem.somos.html" class="purple-hover"> Quem Somos</a></li>
+                </ul>
+                <a href="./html/login.html" class="cadastrar">Cadastrar-se</a>
             </div>
+        </nav>
+    </header>
 
-            <ul class="nav-link">
-                <li><a href="./html/candidatar.html">Quero Trabalhar</a></li>
-                <li><a href="./html/quero.cotratar.html">Quero Contratar</a></li>
-                <li><a href="./html/sobre.html">Quem Somos</a></li>
-            </ul>
-            <a href="html/login.html" class="cadastrar" target="_blank">Cadastrar-se</a>
-        </div>
-    </nav>
-
-
+    <main>
     <section class="main-section">
         <article>
-            <h2>ENCONTRE UM TRABALHO REMOTO</h2>
-            <hr>
-            <p class="hork">CONTRATE UM PROFISSIONAL</p>
-            <hr>
-            <p class="mensagem">Aqui nós mudamos a forma de contratar e trabalhar de forma TOTALMENTE remota <img src=""
-                    alt="Ícone do Sol"></p>
-            <a href="#" class="read-more">Leia mais</a>
-            <hr>
-
-        </article>
-    </section>
-
-    <footer>
-        <ul class="social-icons">
-            <ul class="social-icons">
-                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-        </ul>
+            <h3 class="inicio">ENCONTRE UM TRABALHO REMOTO <span class="seta">➔</span></h3>
+            <h3 class="work">CONTRATE UM PROFISSIONAL</h3>
+            <div class="mensagem-container">
+                <h3 class="mensagem">SEJA UM PARCEIRO <img src="./imgs/sol.png.webp" alt="Ícone do Sol"
+                    class="icone-sol"></h3>
+                    <p class="mensagem-texto">
+                        Aqui nós mudamos a forma de <br> contratar e trabalhar
+                        de forma <br>TOTALMENTE remota.
+                    </p>
+                    <button class="read-more">Leia Mais</button>
+                </div>
+            </article>
+        </section>
+      </main>
+      
+        <footer>
+            <div class="footer_social_media">
+            <a href="" class="footer-link" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            
+            <a href="" class="footer-link" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            
+            <a href="" class="footer-link" id="linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            
+            <a href="" class="footer-link" id="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
         <p>&copy; 2023 Futuro Remoto. Todos os direitos reservados.</p>
     </footer>
-</body>
-
-</html>
+    
+    
+    </html>
