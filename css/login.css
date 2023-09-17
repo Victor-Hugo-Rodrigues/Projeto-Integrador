@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para o header */
+header {
+    background-color: #1C1C39;
+    padding: 10px;
+}
+
+/* Estilo para a imagem do logo no header */
+.site-title img {
+    float: left;
+    height: auto;
+    text-align: center;
+}
+
+#titulo {
+    text-align: center;
+}
+
+/* Estilo para a imagem */
+img {
+    float: right; 
+    margin-left: 20px; 
+    max-width: 100%; 
+    height: auto;
+}
+
+/* Estilo para a seção de login */
+.login {
+    color: white;
+    text-align: center; 
+    padding: 20px; 
+    background-color: #1C1C39;
+}
+
+h2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para os campos de entrada (input) */
+input {
+    background-color: rgba(0, 0, 0, 0);
+    outline: auto;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    width: 225px;
+    margin: 5px;
+}
+
+/* Estilo para os botões */
+button {
+    background-color: white;
+    border: none;
+    padding: 15px;
+    color: #1C1C39;
+    border-radius: 50px;
+    width: 250px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.buttonPink {
+    background-color: #E8AFF6;
+    cursor: pointer;
+}
+
+/* Estilo para o footer */
+footer {
+    width: auto;
+    background-color: #5566B8;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* Estilo para a lista de ícones sociais no footer */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+    color: white;
+    margin-right: 15px;
+    font-size: 24px;
+}
