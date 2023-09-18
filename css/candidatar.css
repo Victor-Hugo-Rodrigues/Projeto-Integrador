@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ttinterphrace&display=swap');
+
+:root {
+    --primary-color: #5566B8;
+    --main-bg-color: #080101;
+    --overlay-opacity: 0.2;
+    --nav-bg-color: #11113a;
+    --text-color: #fff;
+    --accent-color: #831cd2;
+    --button-bg-color: black;
+}
+
+
+ body{
+    font-family: 'Ttinterphrace', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:#1C1C39;
+    color:var(--text-color);
+}
+
+
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+.search {
+  display: inline-block;
+  border: 1px solid var(--text-color);
+  border-radius: 12px;
+  padding: 5px;
+  width: 90%;
+}
+
+#search-input {
+  background:#1C1C39;
+  font-size: 19px;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  width: 75%;
+  float: left;
+}
+
+#search-icon {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color:var(--accent-color);
+  cursor: pointer;
+  float: right;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: -5px auto;
+}
+
+.black-button, .transparent-button {
+  color: var(--text-color);
+  border-radius: 25px;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  margin: -5px 5px;
+  padding: 5px 15px;
+}
+
+.black-button {
+  background-color: var(--button-bg-color);
+  margin-right: 10px;
+}
+
+.transparent-button {
+  background-color: transparent;
+  color: var(var(--text-color));
+  margin-left: 10px;
+}
+
+.job-listing {
+  border: 2px solid #5566B8;
+  margin: 25px;
+  border-radius: 10px 10px 0 0;
+  width: 320px; 
+  height: 360px; 
+  display: inline-block;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  position: relative;
+  height: 200px; 
+}
+
+button{
+  border-radius: 25px;
+  background-color: #11113a;
+  border: 0.5px solid white;
+  color: white;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+}
+
+
+img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+ 
+ h2 {
+    padding: 0.5rem;
+    font-size: 19px;
+    margin: 19px 0;
+    text-indent: -19px;
+  }
+
+  p{
+    font-size: 13.5px
+
+  }
+  
+  .nomeEmpressa{
+    text-align: center;
+
+  }
+
+
+  i.fas {
+    color: #E8AFF6; 
+  }
+  
+
+
+/* Estilos para o footer */
+footer {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 20px 0;
+}
+
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  i{
+    font-size: 24px;
+  }
+  
+  .social-icons li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .social-icons a {
+    color:var(--text-color);
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    text-decoration: underline;
+  }
+
+
+  

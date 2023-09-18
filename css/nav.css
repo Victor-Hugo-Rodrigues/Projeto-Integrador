@@ -7,14 +7,23 @@
     --purple-color: #800080;
 }
 
+body{
+    font-family: 'Ttinterphrace', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .nav-links {
     padding: 2px auto;
-    background: var(--nav-bg-color);
+    background: linear-gradient(90deg, #3a54bb, #4c71ef, #3148b2, #1C1C39);
     border-radius: 25px;
+    font-size: 19px;
     width: calc(100% - 200px);
     margin: 15px auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4c71ef;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 
 .nav-content {
     display: flex;
@@ -43,7 +52,7 @@ nav a {
     transition: color 0.3s;
 }
 .main-section {
-    font-size: 96px;
+
     display: flex;
     justify-content: center;
     align-items: center;

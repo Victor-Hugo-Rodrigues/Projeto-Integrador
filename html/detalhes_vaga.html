@@ -6,76 +6,80 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Exemplo de Ícones</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/detalhes_vagas.css">
 </head>
 <body>
     <header>
-        <a href="../home.html">
-            <img src="../imgs/futuroremoto_logo_preto.png" alt="Logo Futuro Remoto" style="width: 80px; height: 80px;">
-          </a>
-        <nav>
-            <ul>
-                <li>Quero Trabalhar</li>
-                <li>Quero Contratar</li>
-                <li>Quem Somos</li>
-                <li>MEU PERFIL</li>
-            </ul>
+        <nav class="nav-links">
+            <div class="nav-content">
+                <div class="site-title">
+                    <a href="home.html">
+                        <h4>Futuro Remoto</h4>
+                    </a>
+                </div>
+                <ul class="nav-link">
+                    <li><a href="./html/quero-trabalhar.html" class="purple-hover">Quero Trabalhar</a></li>
+                    <li><a href="./beneficios.html" class="purple-hover">Benefícios</a></li>
+                    <li><a href="./quem.somos.html" class="purple-hover"> Quem Somos</a></li>
+                </ul>
+                <a href="./html/login.html" class="cadastrar">Cadastrar-se</a>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <img src="../imgs/imagem-de-close-up-de-programador-trabalhando-em-sua-mesa-no-escritorio.jpg" alt="Foto pessoa programando" style="width: 375px; height: 283px;">
-            <h2>Desenvolvedor(a) Web Front-End</h2>
-            <i class="fas fa-user"></i><p>Unilever</p>
-            <i class="fas fa-fire"></i><p>Pleno</p>
-            <i class="fas fa-globe"></i><p>Inglês</p>
-            <button>Saiba mais</button>
-            <p>
-                ◽Ajudar na implementação do desenvolvimento de novas páginas end-to-end.<br>
-                ◽Desenvolver sites impressionantes, dinâmicos e responsivos trabalhando juntamente com a equipe de design.<br>
-                ◽Desenvolver sites impressionantes, dinâmicos e responsivos trabalhando juntamente com a equipe de desig.<br>
-            </p>
-            <button>LER MAIS</button>
-            <button>ME CADASTRAR</button>
-        </section>  
+
+        <section class="job-listing">
+            <div class="job-image">
+                <img class="isso-deuTrabalho" src="../imgs/imagem-de-close-up-de-programador-trabalhando-em-sua-mesa-no-escritorio.jpg" alt="Foto pessoa programando">
+            </div>
+            <div class="job-content">
+                <h2 class="job-title">Desenvolvedor(a) Web Front-End</h2>
+                <div class="job-details">
+                    <div class="detail">
+                        <i class="fas fa-user"></i>
+                        <p class="company-name">Unilever</p>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-fire"></i>
+                        <p class="job-level">Pleno</p>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-globe"></i>
+                        <p class="language">Inglês</p>
+                    </div>
+                </div>
+                <div class="job-description">
+                    <p class="requisitos">
+                        ◽Ter Conhecimento solidos em HTML, CSS e JavaScript. <br>
+                        ◽Ajudar na implementação do desenvolvimento de novas páginas end-to-end.<br>
+                        ◽Inglês em nível intermediário para uma comunicação eficaz. <br>
+                        ◽Habilidade de trabalhar em equipe e colaborar com colegas de desenvolvimento e design. <br>
+                        ◽Frameworks: Familiaridade com frameworks JavaScript, como React, Angular ou Vue.js, é um plus <br>
+                        ◽Git/GitHub: Conhecimento de sistemas de controle de versão, como Git e GitHub, para gerenciar o código-fonte. <br>
+                        ◽Desenvolver sites impressionantes, dinâmicos e responsivos trabalhando juntamente com a equipe de design.<br>
+                    </p>
+                </div>
+                <div class="container">
+                    <a href="" class="readMore"><p>Ler Mais</p></a>
+                    <div class="cadastro">
+                        <button>ME CADASTRAR</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
         
-        <section>
-            <h3>Relacionadas</h3>
-            <hr>
-        </section>
-
-            <img src="../imgs/imagem-de-close-up-de-programador-trabalhando-em-sua-mesa-no-escritorio.jpg" alt="Foto pessoa programando" style="width: 275px; height: 183px;">
-            <h3>Desenvolvedor(a)<br>Web Front-End</h3>
-            <p>Unilever Brasil</p>
-            <i class="fas fa-fire"></i><p>Sênior</p>
-            <i class="fas fa-globe"></i><p>Português</p>
-            <button>Saiba mais</button><br><br><br><br>
-            
-            <img src="../imgs/vista-traseira-do-programador-trabalhando-a-noite-toda.jpg" alt="Foto pessoa sentada de costas programando" style="width: 275px; height: 183px;">
-            <h3>Desenvolvedor(a) Flutter</h3>
-            <p>Google</p>
-            <i class="fas fa-fire"></i><p>Pleno</p>
-            <i class="fas fa-globe"></i><p>Espanhol</p>
-            <button>Saiba mais</button><br><br><br><br>
-            <img>
-
-            <img src="../imgs/secao-intermediaria-do-homem-irreconhecivel-tirando-foto-do-plano-de-trabalho-no-telefone.jpg" alt="Foto pessoa programando" style="width: 275px; height: 183px;">
-            <h3>User Experience</h3>
-            <p>McDonald's</p>
-            <i class="fas fa-fire"></i><p>Júnior</p>
-            <i class="fas fa-globe"></i><p>Inglês</p>
-            <button>Saiba mais</button><br><br><br><br>
-        </section>
-    </main>
     <footer>
+        <ul class="social-icons">
             <ul class="social-icons">
-                <ul class="social-icons">
-                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             </ul>
-            <p>&copy; 2023 Futuro Remoto. Todos os direitos reservados.</p>
+        </ul>
+        <p>&copy; 2023 Futuro Remoto. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

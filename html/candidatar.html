@@ -1,78 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Exemplo de Ícones</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/candidatar.css">
 </head>
 <body>
     <header>
-        <a href="../home.html">
-            <img src="../imgs/futuroremoto_logo_preto.png" alt="Logo Futuro Remoto" style="width: 80px; height: 80px;">
-          </a>
-        <nav>
-            <ul>
-                <li>Quero Trabalhar</li>
-                <li>Benefícios</li>
-                <li>Quem somos</li>
-                <li>MEU PERFIL</li>
-            </ul>
+        <nav class="nav-links">
+            <div class="nav-content">
+                <div class="site-title">
+                    <a href="home.html">
+                        <h4>Futuro Remoto</h4>
+                    </a>
+                </div>
+                <ul class="nav-link">
+                    <li><a href="./html/quero-trabalhar.html" class="purple-hover">Quero Trabalhar</a></li>
+                    <li><a href="./beneficios.html" class="purple-hover">Benefícios</a></li>
+                    <li><a href="./quem.somos.html" class="purple-hover"> Quem Somos</a></li>
+                </ul>
+                <a href="./html/login.html" class="cadastrar">Cadastrar-se</a>
+            </div>
         </nav>
     </header>
     <main>
-        <h3>tags</h3>
-        <hr>
-        <form>
-            <input placeholder="Busque sua vaga"><br><br>
-        </form>
-        <section>
-            <button>ALL</button>
-            <button>JÚNIOR</button>
-            <button>PLENO</button>
-            <button>SÊNIOR</button>
-            <button>CLT</button>
-            <button>PCD</button>
-            <button>INGLÊS</button>
-            <button>ESPANHOL</button>
-            <button>ESTÁGIO</button>
-            <button>Frelancer</button>
-            <br><br> 
-
-            <img src="../imgs/imagem-de-close-up-de-programador-trabalhando-em-sua-mesa-no-escritorio.jpg" alt="Foto pessoa programando" style="width: 275px; height: 183px;">
-            <h2>Desenvolvedor(a)<br>Web Front-End</h2>
-            <p>Unilever Brasil</p>
-            <i class="fas fa-fire"></i><p>Sênior</p>
-            <i class="fas fa-globe"></i><p>Português</p>
-            <a href="detalhes_vaga.html"><button>Saiba mais</button></a><br><br><br><br>
+        <div class="container">
+            <div class="search">
+                <input type="text" id="search-input" placeholder="O que você busca?">
+                <i class="fas fa-search" id="search-icon"></i>
+            </div>
             
-            <img src="../imgs/vista-traseira-do-programador-trabalhando-a-noite-toda.jpg" alt="Foto pessoa de senta de costas programando" style="width: 275px; height: 183px;">
-            <h2>Desenvolvedor(a) Flutter</h2>
-            <p>Google</p>
-            <i class="fas fa-fire"></i><p>Pleno</p>
-            <i class="fas fa-globe"></i><p>Espanhol</p>
-            <button>Saiba mais</button><br><br><br><br>
-            <img>
-
-            <img src="../imgs/secao-intermediaria-do-homem-irreconhecivel-tirando-foto-do-plano-de-trabalho-no-telefone.jpg" alt="Foto pessoa programando" style="width: 275px; height: 183px;">
-            <h2>User Experience</h2>
-            <p>McDonald's</p>
-            <i class="fas fa-fire"></i><p>Júnior</p>
-            <i class="fas fa-globe"></i><p>Inglês</p>
-            <button>Saiba mais</button><br><br><br><br>
-        </section>
+            <br>
+            <br>
+            <br>
+            
+            <div class="button-container">
+                <button class="black-button">VER TUDO</button>
+                <button class="transparent-button">JÚNIOR</button>
+                <button class="transparent-button">PLENO</button>
+                <button class="transparent-button">SÊNIOR</button>
+                <button class="transparent-button">CLT</button>
+                <button class="transparent-button">PCD</button>
+                <button class="transparent-button">INGLÊS</button>
+                <button class="transparent-button">ESPANHOL</button>
+                <button class="transparent-button">ESTÁGIO</button>
+                <button class="transparent-button">FREELANCER</button>
+            </div>
+            <br>
+            <br>
+            <div class="section-container">
+                <section class="job-listing">
+                    <div class="image-container">
+                        <img src="../imgs/imagem-de-close-up-de-programador-trabalhando-em-sua-mesa-no-escritorio.jpg"
+                            alt="Foto pessoa programando">
+                    </div>
+                    <h2>Desenvolvedor(a) Front-End</h2>
+                    <p class="nomeEmpressa">Unilever Brasil</p>
+                    <div class="card-content">
+                        <span class="job-level"><i class="fas fa-fire"></i> Pleno</span>
+                        <span class="language"><i class="fas fa-globe"></i> Português</span>
+                        <a href="detalhes_vaga.html"><button class="learn-more">Saiba mais</button></a>
+                    </div>
+                </section>
+                <section class="job-listing">
+                    <div class="image-container">
+                        <img src="../imgs/vista-traseira-do-programador-trabalhando-a-noite-toda.jpg"
+                            alt="Foto pessoa de senta de costas programando">
+                    </div>
+                    <h2>Desenvolvedor(a) Flutter</h2>
+                    <p class="nomeEmpressa">Google</p>
+                    <div class="card-content">
+                        <span class="job-level"><i class="fas fa-fire"></i> Pleno</span>
+                        <span class="language"><i class="fas fa-globe"></i> Espanhol</span>
+                        <button class="learn-more">Saiba mais</button>
+                    </div>
+                </section>
+                <section class="job-listing">
+                    <div class="image-container">
+                        <img src="../imgs/imagem-de-close-up-de-programador-trabalhando-em-sua-mesa-no-escritorio.jpg"
+                            alt="Foto pessoa programando">
+                    </div>
+                    <div class="card-content">
+                        <h2>Desenvolvedor(a) Full Stack</h2>
+                        <p class="nomeEmpressa">McDonald's</p>
+                        <span class="job-level"><i class="fas fa-fire"></i> Júnior</span>
+                        <span class="language"><i class="fas fa-globe"></i> Inglês</span>
+                        <button class="learn-more">Saiba mais</button>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
+        <ul class="social-icons">
             <ul class="social-icons">
-                <ul class="social-icons">
-                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             </ul>
-            <p>&copy; 2023 Futuro Remoto. Todos os direitos reservados.</p>
+        </ul>
+        <p>&copy; 2023 Futuro Remoto. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
