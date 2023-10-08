@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/depoimentos.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-links">
+            <div class="nav-content">
+                <div class="site-title">
+                    <a href="../home.html">
+                        <img src="../imgs/logo-futuro-remoto.png.png" style="height: 64px;" alt="Logo Fututo Remoto">
+                    </a>
+                </div>
+                <ul class="nav-link">
+                    <li><a href="../html/login.html" class="purple-hover">Quero Trabalhar</a></li>
+                    <li><a href="../html/blog.html" class="purple-hover">Saber Mais</a></li>
+                    <li><a href="../html/quem_somos.html" class="purple-hover"> Quem Somos</a></li>
+                </ul>
+
+                <div id="user-profile">
+                    <div class="profile-content">
+                        <div class="profile-picture">
+                            <img id="profile-image" src="../imgs/ana-oliveira.webp" alt="Foto de perfil">
+                        </div>
+                        <span id="logado" class="cadastrar"></span>
+                        <i id="menu-toggle" class="fas fa-chevron-down seta-para-baixo"></i>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <div class="dropdown-menu">
+                                <a href="perfil.html">Perfil</a>
+                                <a href="#">Configurações</a>
+                                <a href="#">Alterar Fotos</a>
+                                <a href="#">Ajuda/FAQ</a>
+                                <a href="#" onclick="sair()">Sair</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="search">
+        <p>O que você procura</p>
+    </div>
+
+    <div class="button-container">
+        <a href="blog.html"><button class="black-button">VER TUDO</button></a>
+        <button class="transparent-button" data-target="blog">BLOG</button>
+        <button id="vagas-remotas" class="transparent-button" onclick="window.location.href='candidatar.html'">VAGAS REMOTAS</button>
+        <button class="transparent-button">LOCAIS PARCEIROS</button>
+        <button class="transparent-button">DEPOIMENTOS</button>
+        <button class="transparent-button">NOSSA HISTORIA</button>
+        <button class="transparent-button">MODELO DE CURRICULO</button>
+        <button class="transparent-button">TRABALHE NO EXTERIOR</button>
+        <button class="transparent-button">PERGUNTAS FREQUENTES</button>
+        <button class="transparent-button">CONTATO</button>
+    </div>
+    
+    
+    
+
+
+    <section class="card-container" id="card-depoimentos">
+        <!-- os cards de depoimentos estão sendo gerados aqui -->
+        <div class="left-arrow">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="right-arrow">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+
+    </section>
+
+    <ul class="card-indicators">
+        <li class="indicator active"></li>
+        <li class="indicator"></li>
+        <li class="indicator"></li>
+    </ul>
+
+    <footer>
+        <div class="footer_social_media">
+            <a href="#" class="footer-link" id="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-link" id="linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <p>&copy; 2023 Futuro Remoto. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/depoimentos.js"></script>
+    <script src="../js/dropdownMenu.js"></script>
+    <script src="../js/usuario.js"></script>
+
+</body>
+
+</html>

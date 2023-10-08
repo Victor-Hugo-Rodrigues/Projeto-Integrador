@@ -1,124 +1,105 @@
-body {
+body{
     margin: 0;
     padding: 0;
+}
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para o header */
+header {
+    background-color: #1C1C39;
+    padding: 10px;
+}
+
+/* Estilo para a imagem do logo no header */
+.site-title img {
+    float: left;
+    height: auto;
+    text-align: center;
+}
+
+#titulo {
+    text-align: center;
+}
+
+/* Estilo para a imagem */
+img {
+    float: right; 
+    margin-left: 20px; 
+    max-width: 100%; 
+    height: auto;
+}
+
+/* Estilo para a seção de login */
+.login {
+    color: white;
+    text-align: center; 
+    padding: 20px; 
     background-color: #1C1C39;
 }
 
-.card-main {
-    width: 100vw;
-    height: 100vh;
+h2 {
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.left-login {
-    width: 50vh;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.left-login > h1 {
-    font-size: 3vh;
-    color:#831cd2;
-}
-
-
-.right-login {
-    width: 50vh;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-login{
-    width: 49vh;
-}
-
-.card-login {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 35px;
-    background: #2f2841;
-    border-radius: 25px;
-    box-shadow: 0px 10px 40px #00000056;
-}
-
-
-.card-login >h1{
+/* Estilo para os campos de entrada (input) */
+input {
+    background-color: rgba(0, 0, 0, 0);
+    outline: auto;
     color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    width: 225px;
+    margin: 5px;
 }
 
-.card-login>li {
-    color: wheat;
-    font-weight: 800;
-    margin: 0;
-}
-
-
-.textfield {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px 0px;
-}
-
-.textfield>input {
-    width: 100%;
+/* Estilo para os botões */
+button {
+    background-color: white;
     border: none;
-    border-radius: 10px;
     padding: 15px;
-    background: #514869;
-    color: #f0ffffde;
-    font-size: 12pt;
-    box-shadow: 0px 10px 40px #00000056;
-    outline: none;
-    box-sizing: border-box;
-}
-
-.textfield>label {
-    color: #f0ffffde;
-    margin-bottom: 10px;
-}
-
-.textfield>input::placeholder {
-    color: #f0ffff94;
-}
-
-.btn-login {
-    width: 76%;
-    padding: 16px 0px;
-    margin: 25px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    font-variant: 800;
-    letter-spacing: 3px;
-    color: white;
-    background: #E8AFF6;
+    color: #1C1C39;
+    border-radius: 50px;
+    width: 250px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
-#msgError{
-    text-align: center;
-    font-size: 18px;
-    color: red;
-    background-color: #5566B8;
-    padding: 5px;
-    border-radius: 4px;
-    display: none;
+.buttonPink {
+    background-color: #E8AFF6;
+    cursor: pointer;
 }
 
-a{
+/* Estilo para o footer */
+footer {
+    width: auto;
+    background-color: #5566B8;
     color: white;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* Estilo para a lista de ícones sociais no footer */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+    color: white;
+    margin-right: 15px;
+    font-size: 24px;
 }
