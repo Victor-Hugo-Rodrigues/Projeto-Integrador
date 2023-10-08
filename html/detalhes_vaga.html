@@ -15,15 +15,35 @@
             <div class="nav-content">
                 <div class="site-title">
                     <a href="../home.html">
-                        <h4>Futuro Remoto</h4>
+                        <img src="../imgs/logo-futuro-remoto.png.png" style="height: 64px;" alt="Logo Fututo Remoto">
                     </a>
                 </div>
                 <ul class="nav-link">
                     <li><a href="../html/login.html" class="purple-hover">Quero Trabalhar</a></li>
                     <li><a href="../html/blog.html" class="purple-hover">Saber Mais</a></li>
-                    <li><a href="./quem.somos.html" class="purple-hover"> Quem Somos</a></li>
+                    <li><a href="../html/quem_somos.html" class="purple-hover"> Quem Somos</a></li>
                 </ul>
-                <a href="../html/login.html" class="cadastrar">Cadastrar-se</a>
+
+                <div id="user-profile">
+                    <div class="profile-content">
+                        <div class="profile-picture">
+                            <img id="profile-image" src="../imgs/ana-oliveira.webp" alt="Foto de perfil">
+                        </div>
+                        <span id="logado" class="cadastrar"></span>
+                        <i id="menu-toggle" class="fas fa-chevron-down seta-para-baixo"></i>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <div class="dropdown-menu">
+                                <a href="perfil.html">Perfil</a>
+                                <a href="#">Configurações</a>
+                                <a href="#">Alterar Fotos</a>
+                                <a href="#">Ajuda/FAQ</a>
+                                <a href="#" onclick="sair()">Sair</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -81,5 +101,9 @@
         </ul>
         <p>&copy; 2023 Futuro Remoto. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="../js/dropdownMenu.js"></script>
+    <script src="../js/usuario.js"></script>
+
 </body>
 </html>

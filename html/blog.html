@@ -17,7 +17,7 @@
             <div class="nav-content">
                 <div class="site-title">
                     <a href="../home.html">
-                        <h4>Futuro Remoto</h4>
+                        <img src="../imgs/logo-futuro-remoto.png.png" style="height: 64px;" alt="Logo Fututo Remoto">
                     </a>
                 </div>
                 <ul class="nav-link">
@@ -25,86 +25,82 @@
                     <li><a href="../html/blog.html" class="purple-hover">Saber Mais</a></li>
                     <li><a href="../html/quem_somos.html" class="purple-hover"> Quem Somos</a></li>
                 </ul>
-                <a href="./html/login.html" class="cadastrar">Cadastrar-se</a>
+                <div id="user-profile">
+                    <div class="profile-content">
+                        <div class="profile-picture">
+                            <img id="profile-image" src="../imgs/ana-oliveira.webp" alt="Foto de perfil">
+                        </div>
+                        <span id="logado" class="cadastrar"></span>
+                        <i id="menu-toggle" class="fas fa-chevron-down seta-para-baixo"></i>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <div class="dropdown-menu">
+                                <a href="#">Perfil</a>
+                                <a href="#">Configurações</a>
+                                <a href="#">Alterar Fotos</a>
+                                <a href="#">Ajuda/FAQ</a>
+                                <a href="#" onclick="sair()">Sair</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+    <div class="search">
+        <p>O que você procura</p>
+    </div>
+
+    <div class="button-container">
+        <button id="home" class="black-button">VER TUDO</button>
+        <button id="blog" class="transparent-button" data-target="blog">BLOG</button>
+        <button id="vagas-remotas" class="transparent-button" onclick="window.location.href='candidatar.html'">VAGAS REMOTAS</button>
+        <button class="transparent-button">LOCAIS PARCEIROS</button>
+        <button class="transparent-button" onclick="window.location.href='depoimentos.html'">DEPOIMENTOS</button>
+        <button class="transparent-button">NOSSA HISTORIA</button>
+        <button class="transparent-button">MODELO DE CURRICULO</button>
+        <button class="transparent-button">TRABALHE NO EXTERIOR</button>
+        <button class="transparent-button">PERGUNTAS FREQUENTES</button>
+        <button class="transparent-button">CONTATO</button>
+    </div>
+
+    <br>
+    <br>
+
 
     <main>
-        <div class="search">
-            <p>O que você procura</p>
-        </div>
-
-        <div class="button-container">
-            <button class="black-button">VER TUDO</button>
-            <button class="transparent-button">VAGAS REMOTAS</button>
-            <button class="transparent-button">LOCAIS PARCEIROS</button>
-            <button class="transparent-button">DEPOIMENTOS</button>
-            <button class="transparent-button">NOSSA HISTORIA</button>
-            <button class="transparent-button">MODELO DE CURRICULO</button>
-            <button class="transparent-button">TRABALHE NO EXTERIOR</button>
-        </div>
-
-        <main>
-            <section class="cards">
-                <article class="card">
-                    <div class="card-content">
-                        <div class="card-image-container">
-                            <img src="../IMGS/visto.png" alt="Imagem de Visto" class="card-image">
-                            <div class="image-overlay"></div>
-                        </div>
-                        <div class="card-text-container">
-                            <h3>Tipos de Vistos para quem quer trabalhar no exterior</h3>
-                            <a href="#" class="card-link">Leias Mais</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-content">
-                        <div class="card-image-container">
-                            <img src="../IMGS/pc.png" alt="Imagem do Futuro Remoto" class="card-image">
-                        </div>
-                        <div class="card-text-container">
-                            <h3>Como Surgiu a Futuro Remoto</h3>
-                            <a href="#" class="card-link">Leia mais</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-content">
-                        <div class="card-image-container">
-                            <img src="../IMGS/vantagens.png" alt="Imagem de Vantagens Remotas" class="card-image">
-                        </div>
-                        <div class="card-text-container">
-                            <h3>Vantagens de Trabalhar Remotamente</h3>
-                            <a href="#" class="card-link">Leia mais</a>
-                        </div>
-                    </div>
-                </article>
-        </main>
-
-        <footer>
-            <div class="footer_social_media">
-                <a href="#" class="footer-link" id="instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="#" class="footer-link" id="facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="footer-link" id="linkedin">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="#" class="footer-link" id="twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
+        <div class="cards-container">
+            <div class="cards" id="card-container">
+                <!-- Os cartões serão adicionados aqui -->
             </div>
-            <p>&copy; 2023 Futuro Remoto. Todos os direitos reservados.</p>
-        </footer>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_social_media">
+            <a href="#" class="footer-link" id="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-link" id="linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="#" class="footer-link" id="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <p>&copy; 2023 Futuro Remoto. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/blog.js"></script>
+    <script src="../js/dropdownMenu.js"></script>
+    <script src="../js/usuario.js"></script>
+
 
 </body>
-
 </html>

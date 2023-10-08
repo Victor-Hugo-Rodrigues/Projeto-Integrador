@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ttinterphrace&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ttinterphrace&display=swap');
 
 :root {
     --background-color: rgb(0, 0, 0);
@@ -78,5 +78,165 @@ nav a {
 
 .purple-hover:hover::before {
     transform: scaleX(1);
+}
+ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ttinterphrace&display=swap');
+
+:root {
+    --background-color: rgb(0, 0, 0);
+    --text-color: white;
+    --nav-bg-color: #11113a;
+    --purple-color: #800080;
+}
+
+body {
+    font-family: 'Ttinterphrace', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links {
+    background: linear-gradient(90deg, #3a54bb, #4c71ef, #3148b2, #1C1C39);
+    padding: 2px auto;
+    border-radius: 25px;
+    font-size: 19px;
+    border: 2px solid #4c71ef;
+    width: calc(100% - 200px);
+    margin: 15px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+}
+
+
+.main-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1;
+}
+
+.purple-hover {
+    position: relative;
+}
+
+.purple-hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background-color: var(--purple-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s;
+}
+
+.purple-hover:hover::before {
+    transform: scaleX(1);
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #808080;
+    margin-right: 10px;
+}
+
+#profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.seta-para-baixo {
+    margin-left: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    padding: 1rem;
+    margin: 1rem;
+    width: 200px;
+    border-radius: 1rem;
+    border: 2px solid #4c71ef;
+    background-color: #333;
+    border-top: none;
+    margin-left: -5vh;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+.profile-content:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown-menu a:hover {
+    background-color: #4c71ef;
+    border-radius: 50px;
 }
 
