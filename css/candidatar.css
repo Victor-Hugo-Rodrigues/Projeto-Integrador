@@ -11,14 +11,15 @@
 }
 
 
- body{
-    font-family: 'Ttinterphrace', sans-serif;
-    margin: 0;
-    padding: 0;
-    background:#1C1C39;
-    color:var(--text-color);
+body {
+  margin: 0;
+  padding: 0;
+  background: #1C1C39;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
 
 .container {
   text-align: center;
@@ -101,7 +102,7 @@
   height: 200px; 
 }
 
-button{
+  button{
   border-radius: 25px;
   background-color: #11113a;
   border: 0.5px solid white;
@@ -118,8 +119,7 @@ img {
   object-fit: cover;
 }
 
- 
- h2 {
+h2 {
     padding: 0.5rem;
     font-size: 19px;
     margin: 19px 0;
@@ -141,20 +141,13 @@ img {
     color: #E8AFF6; 
   }
   
-
-
-/* Estilos para o footer */
-footer {
-  position: fixed; 
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  font-size: 14px;
-  text-align: center;
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  padding: 20px 0;
-}
+  footer {
+    font-size: 14px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px 0;
+  }
 
   
   .social-icons {
@@ -181,5 +174,29 @@ footer {
     text-decoration: underline;
   }
 
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -20px;
+   
+  }
+  
+  .pagination .page-button {
+    width: 30px; 
+    height: 30px;
+    border: 1px solid var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; 
+    margin: 0.2rem;
+  }
 
+  .pagination .page-button.selected {
+    background-color: var(--primary-color); /* Cor de fundo para indicar a seleção */
+    color: white; /* Cor do texto quando selecionado */
+  }
+  
   

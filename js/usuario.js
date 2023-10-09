@@ -15,5 +15,5 @@ if (userLogadoJSON) {
 function sair() {
     localStorage.removeItem('userToken');
     localStorage.removeItem('userLogado');
-    window.location.href = 'cadastro.html';
+    window.location.href = '../home.html';
 }

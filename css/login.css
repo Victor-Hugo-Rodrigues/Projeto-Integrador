@@ -103,3 +103,13 @@ i{
     margin-right: 15px;
     font-size: 24px;
 }
+
+#msgError{
+    text-align: center;
+    font-size: 18px;
+    color: red;
+    background-color: #5566B8;
+    padding: 5px;
+    border-radius: 4px;
+    display: none;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,17 +27,17 @@
         </nav>
     </header>
     <main>
-        <div class="container">
+   <div class="container">
             <div class="search">
                 <input type="text" id="search-input" placeholder="O que você busca?">
                 <i class="fas fa-search" id="search-icon"></i>
-            </div>
-            
+            </div> 
+
             <br>
             <br>
             <br>
-            
-            <div class="button-container">
+
+         <div class="button-container">
                 <button class="black-button">VER TUDO</button>
                 <button class="transparent-button">JÚNIOR</button>
                 <button class="transparent-button">PLENO</button>
@@ -48,54 +48,20 @@
                 <button class="transparent-button">ESPANHOL</button>
                 <button class="transparent-button">ESTÁGIO</button>
                 <button class="transparent-button">FREELANCER</button>
-            </div>
+            </div> 
             <br>
             <br>
-            <div class="section-container">
-                <section class="job-listing">
-                    <div class="image-container">
-                        <img src="../imgs/imagem-de-close-up-de-programador-trabalhando-em-sua-mesa-no-escritorio.jpg"
-                            alt="Foto pessoa programando">
-                    </div>
-                    <h2>Desenvolvedor(a) Front-End</h2>
-                    <p class="nomeEmpressa">Unilever Brasil</p>
-                    <div class="card-content">
-                        <span class="job-level"><i class="fas fa-fire"></i> Pleno</span>
-                        <span class="language"><i class="fas fa-globe"></i> Português</span>
-                        <a href="detalhes_vaga.html"><button class="learn-more">Saiba mais</button></a>
-                    </div>
-                </section>
-                <section class="job-listing">
-                    <div class="image-container">
-                        <img src="../imgs/vista-traseira-do-programador-trabalhando-a-noite-toda.jpg"
-                            alt="Foto pessoa de senta de costas programando">
-                    </div>
-                    <h2>Desenvolvedor(a) Flutter</h2>
-                    <p class="nomeEmpressa">Google</p>
-                    <div class="card-content">
-                        <span class="job-level"><i class="fas fa-fire"></i> Pleno</span>
-                        <span class="language"><i class="fas fa-globe"></i> Espanhol</span>
-                        <button class="learn-more">Saiba mais</button>
-                    </div>
-                </section>
 
-                <section class="job-listing">
-                    <div class="image-container">
-                        <img src="../imgs/imagem-de-close-up-de-programador-trabalhando-em-sua-mesa-no-escritorio.jpg"
-                            alt="Foto pessoa programando">
-                    </div>
-                    
-                    <div class="card-content">
-                        <h2>Desenvolvedor(a) Full Stack</h2>
-                        <p class="nomeEmpressa">McDonald's</p>
-                        <span class="job-level"><i class="fas fa-fire"></i> Júnior</span>
-                        <span class="language"><i class="fas fa-globe"></i> Inglês</span>
-                        <button class="learn-more">Saiba mais</button>
-                    </div>
-                </section>
+            
+            <div class="section-container" id="job-cards">
+                <!--Trabalhos serão adicionados dinamicamente aqui usando JavaScript -->
             </div>
-        </div>
     </main>
+
+    <div class="pagination" id="pagination">
+
+    </div>
+    
     <footer>
         <ul class="social-icons">
             <ul class="social-icons">
@@ -107,5 +73,9 @@
         </ul>
         <p>&copy; 2023 Futuro Remoto. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="../js/candidatar.js"></script>
 </body>
-</html>
+</html> 
+
+

@@ -1,43 +1,39 @@
-
-
 function entrar() {
-    const email = document.getElementById('email');
-    const senha = document.getElementById('password');
-    const msgError = document.getElementById('msgError');
+    const emailInput = document.getElementById('email');
+    const senhaInput = document.getElementById('password');
+    const msgError = document.getElementById("msgError");
 
-    let listUser = JSON.parse(localStorage.getItem('listUser'));
-
+    const listUser = JSON.parse(localStorage.getItem('listUser')) || [];
+    
     let encontrouUsuario = false;
 
-    listUser.forEach((item) => {
-        if (email.value === item.emailCad && senha.value === item.senhaCad) {
+    for (const item of listUser) {
+        if (emailInput.value === item.emailCad && senhaInput.value === item.senhaCad) {
             encontrouUsuario = true;
     
-            let token = Math.random().toString(16).substring(2);
+            const token = Math.random().toString(16).substring(2);
             localStorage.setItem('userToken', token);
     
-            // Armazene o usuário logado como um objeto
-            let uservalid = {
+            const uservalid = {
                 nome: item.nomeCad,
                 email: item.emailCad,
                 senha: item.senhaCad
             };
     
             localStorage.setItem('userLogado', JSON.stringify(uservalid));
+            break; 
+            
         }
-    });
+    }
     
-
     if (encontrouUsuario) {
-        msgError.textContent = '';
-        userEmail.style.color = 'green';
-        userSenha.style.color = 'green';
+        msgError.textContent = ''; 
 
-        // Redirecione o usuário para a próxima página
+
         window.location.href = '../html/blog.html';
     } else {
-        msgError.textContent = 'Usuário não encontrado ou senha incorreta';
-        userEmail.style.color = 'red';
-        userSenha.style.color = 'red';
+        msgError.innerHTML = 'Usuário não encontrado ou senha incorreta'; // Exibe a mensagem de erro
     }
+
+    msgError.style.display = 'block';
 }

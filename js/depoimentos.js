@@ -183,3 +183,12 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 });
+
+function toggleButton() {
+    if (!buttonSelected) {
+        document.getElementById('depoimentosButton').classList.add('selected-button');
+        buttonSelected = true;
+        // Execute a ação desejada aqui, por exemplo, redirecionar para 'depoimentos.html'
+        window.location.href = 'depoimentos.html';
+    }
+}
