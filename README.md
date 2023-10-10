@@ -34,4 +34,8 @@ Visualizar Telas Finais 📋
 
 [Visualizar Telas Finais](https://www.canva.com/design/DAFrAQXUwSE/371t5g1jdgG8WsdHKf-WKA/edit)
 
+## Autores
+
+Victr Hugo, [Raquel Passarela](https://www.linkedin.com/in/raquelpassarela/) e Bianca
+
 
