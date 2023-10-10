@@ -1,46 +1,74 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entra</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <title>Cadastrar-se</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div class="card-main">
-        <div class="left-login">
-            <h1>Faça o login para ver mais informações</h1>
-            <div class="form-image">
-                <div class="form-image">
-                    <div class="img">
-                        <img src="../imgs/entrar.svg" alt="Imagem" class="img-login">
+    <div class="container">
+        <div class="form-image">
+            <img class="image" src="../imgs/programador-codando-em-um-computador.png" alt="">
+        </div>
+        <div class="form">
+            <form id="signupForm" action="#">
+                <div class="title">
+                    <h2 id="titulo">Crie sua conta</h2>
+                    <p>Hora de iniciar o seu cadastro!</p>
+                </div>
+
+                <div class="imput-group">
+                    <div class="input-box">
+                        <label id="labelNome" for="name">Nome</label>
+                        <input id="name" type="text" name="name" placeholder="Digite o seu nome"  autocomplete="off">
+                        <span id="msgErroNome"></span>
+                    </div>
+                    <div class="input-box">
+                        <label id="labelEmail" for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Digite o seu Email"  autocomplete="off">
+                        <span id="msgErroEmail"></span>
+                    </div>
+                    <div class="input-box">
+                        <label id="labelPassword" for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua Senha"  autocomplete="off"> 
+                        <span id="msgErroPassword"></span>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="right-login">
-            <div class="card-login">
-                <h1>Login</h1>
+                <div class="continue-button">
+                    <button type="submit" class="buttonPink">Criar conta</button>
+                </div>
+                
+                <div class="continue-button-two">
+                    <button>Continuar com seu e-mail</button>
+                </div>
+                
+                <div class="continue">
+                    <p>Ja possui uma Conta? <a href="login.html">Faça o Login</a></p>
+                </div>
+            </form>
+            <div class="messages">
                 <div id="msgError"></div>
-                <div class="textfield">
-                    <label for="email" id="userEmail">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu Email">
-                </div>
-                <div class="textfield">
-                    <label for="password" id="userSenha">Senha</label>
-                    <input type="password" name="password" id="password" placeholder="Digite sua Senha">
-                </div>
-                <button class="btn-login" onclick="entrar()">Entrar</button>
-                <a href="cadastro.html">Não tem conta? Faça o cadastro</a>
-                <a href="#">Esqueceu sua senha?</a>
+                <div id="msgSuccess"></div>
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
-    <script src="../js/cadastro.js"></script>
-    <script src="../js/login.js"></script>
 
+    <footer>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        <p>&copy; 2023 Futuro Remoto. Todos os direitos reservados.</p>
+    </footer>
+
+    <script  src="../js/cadastro.js"></script>
 </body>
+
 </html>
