@@ -159,14 +159,13 @@ body::before {
     justify-content: space-between;
 }
 
-
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
     text-align: center;
-    padding: 0.5rem 1rem;
+    padding: 10px 0;
     font-size: 14px;
-    width: auto;
+
 }
 
 .footer_social_media {
@@ -184,3 +183,35 @@ footer {
     text-decoration: none;
 }
 
+
+
+
+
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -20px;
+}
+
+.pagination .page-button {
+    width: 30px; 
+    height: 30px;
+    border: 1px solid var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; 
+    margin: 0.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+  .pagination .page-button.selected {
+    background-color: var(--primary-color); /* Cor de fundo para indicar a seleção */
+    color: white; /* Cor do texto quando selecionado */
+  }
+  
+  

@@ -170,9 +170,6 @@ h2 {
     text-decoration: none;
   }
   
-  .social-icons a:hover {
-    text-decoration: underline;
-  }
 
   .pagination {
     display: flex;
@@ -180,7 +177,6 @@ h2 {
     justify-content: center;
     position: relative;
     top: -20px;
-   
   }
   
   .pagination .page-button {
