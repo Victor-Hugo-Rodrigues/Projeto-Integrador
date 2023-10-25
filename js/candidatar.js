@@ -144,8 +144,6 @@ const jobs = [
             language: "Inglês",
             link: "detalhes_vaga.html"
         }
-
-
 ];
 
 

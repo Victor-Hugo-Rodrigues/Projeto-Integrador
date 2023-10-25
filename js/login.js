@@ -1,32 +1,35 @@
 function entrar() {
     const emailInput = document.getElementById('email');
     const senhaInput = document.getElementById('password');
-    const msgError = document.getElementById('msgError');
 
-    // Verifica se os campos de e-mail e senha estão vazios
-    if (emailInput.value.trim() === '' || senhaInput.value.trim() === '') {
+    if (!emailInput.value.trim() || !senhaInput.value.trim()) {
         exibirMensagemDeErro('Preencha todos os campos antes de continuar.');
-        return; // Retorna imediatamente para evitar a execução subsequente
+        return;
     }
 
     const listUser = JSON.parse(localStorage.getItem('listUser')) || [];
     let encontrouUsuario = false;
+    let senhaIncorreta = false;
 
     for (const item of listUser) {
-        if (emailInput.value === item.emailCad && senhaInput.value === item.senhaCad) {
-            encontrouUsuario = true;
+        if (emailInput.value === item.emailCad) {
+            if (senhaInput.value === item.senhaCad) {
+                encontrouUsuario = true;
 
-            const token = gerarToken();
-            localStorage.setItem('userToken', token);
+                const token = gerarToken();
+                localStorage.setItem('userToken', token);
 
-            const usuarioLogado = {
-                nome: item.nomeCad,
-                email: item.emailCad,
-                senha: item.senhaCad
-            };
+                const usuarioLogado = {
+                    nome: item.nomeCad,
+                    email: item.emailCad,
+                    senha: item.senhaCad
+                };
 
-            localStorage.setItem('userLogado', JSON.stringify(usuarioLogado));
-            break;
+                localStorage.setItem('userLogado', JSON.stringify(usuarioLogado));
+                break;
+            } else {
+                senhaIncorreta = true;
+            }
         }
     }
 
@@ -34,9 +37,14 @@ function entrar() {
         limparMensagemDeErro();
         redirecionarParaPaginaBlog();
     } else {
-        exibirMensagemDeErro('Usuário não encontrado ou senha incorreta');
+        if (senhaIncorreta) {
+            exibirMensagemDeErro('Senha incorreta. Por favor, tente novamente.');
+        } else {
+            exibirMensagemDeErro('Usuário não encontrado. Por favor, verifique seu email ou cadastre-se.');
+        }
     }
 }
+
 
 function exibirMensagemDeErro(mensagem) {
     const msgError = document.getElementById('msgError');
@@ -51,9 +59,35 @@ function limparMensagemDeErro() {
 }
 
 function gerarToken() {
-    return Math.random().toString(16).substring(2);
+    const tokenLength = 32; 
+
+    const array = new Uint8Array(tokenLength);
+    crypto.getRandomValues(array);
+
+    // Converte o array de bytes em uma representação hexadecimal
+    const token = Array.from(array)
+        .map(byte => byte.toString(16).padStart(2, '0'))
+        .join('');
+
+    return token;
 }
 
 function redirecionarParaPaginaBlog() {
-    window.location.href = '../html/blog.html';
+    window.location.href = '../html/candidatar.html';
 }
+
+
+window.addEventListener('load', () => {
+    const userToken = localStorage.getItem('userToken');
+    const hasRedirected = localStorage.getItem('hasRedirected');
+
+    if (userToken && !hasRedirected) {
+        localStorage.setItem('hasRedirected', 'true'); // Marca como redirecionado
+        redirecionarParaPaginaBlog();
+    } else {
+        
+    }
+});
+
+localStorage.removeItem('hasRedirected');
+

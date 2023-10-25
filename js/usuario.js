@@ -1,3 +1,5 @@
+
+
 const userLogadoJSON = localStorage.getItem('userLogado');
 
 // Verifique se os dados do usuário existem no localStorage
@@ -17,3 +19,5 @@ function sair() {
     localStorage.removeItem('userLogado');
     window.location.href = '../home.html';
 }
+
+

@@ -3,19 +3,26 @@
 :root {
     --primary-color: #5566B8;
     --main-bg-color: #080101;
-    --overlay-opacity: 0.2;
+
     --nav-bg-color: #11113a;
     --text-color: #fff;
     --accent-color: #831cd2;
     --button-bg-color: black;
+    --footer-bg-color: #5566B8;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Ttinterphrace', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: var(--nav-bg-color);
-    color: white;
+    color: var(--text-color);
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+
 }
 
 .job-listing {
@@ -57,7 +64,7 @@ body {
 }
 
 .detail i {
-    color: #831cd2;
+    color: var(--accent-color);
     margin-right: 9px;
 }
 
@@ -66,9 +73,6 @@ body {
     margin-bottom: 10px;
 }
 
-.requisitos {
-    font-size: 19.5;
-}
 
 .container {
     display: flex;
@@ -78,10 +82,11 @@ body {
 .readMore {
     text-decoration: none;
     margin-right: 10px;
+    white-space: nowrap;
 }
 
 button {
-    background-color: black;
+    background-color: var(--button-bg-color);
     color: white;
     border: 2px solid white;
     border-radius: 20px;
@@ -96,7 +101,7 @@ button {
 }
 
 .job-listin {
-    border: 2px solid #5566B8;
+    border: 2px solid var(--primary-color);
     margin: 25px;
     border-radius: 10px 10px 0 0;
     width: 320px;
@@ -140,16 +145,69 @@ i.fas {
     color: #E8AFF6;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    margin: 1rem 1rem 4rem 8rem;
+}
+
+
+.job-card {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    width: 320px;
+    height: 360px;
+    text-align: center;
+    margin: 25px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.job-card img {
+    display: block;
     width: 100%;
+    height: 200px;
+    padding: 0;
+}
+
+.job-card h2 {
+    font-size: 19px;
+    white-space: normal;
+    padding: 0;
+}
+
+.job-card p,
+.job-card .job-level,
+.job-card .language {
+    font-size: 13.5px;
+    white-space: normal;
+
+}
+
+i {
+    margin: 0.6rem;
+
+}
+
+#job-cards-container {
+    display: flex;
+}
+
+
+.job-card .icons {
+    display: flex;
+
+}
+
+footer {
     font-size: 14px;
     text-align: center;
     background-color: var(--primary-color);
-    color: white;
-    padding: 20px 0;
+    color: var(--text-color);
+    padding: 5px 0;
 }
 
 .social-icons {
@@ -168,10 +226,8 @@ i {
 }
 
 .social-icons a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
-.social-icons a:hover {
-    text-decoration: underline;
-}
+
