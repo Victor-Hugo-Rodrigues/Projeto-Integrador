@@ -50,7 +50,7 @@ const jobs = [
         altText: "Foto trabalhador com deficiência",
         jobTitle: "Desenvolvedor(a) PCD",
         companyName: "Apple",
-        jobLevel: "PCD",
+        jobLevel: "Júnior",
         language: "Português",
         link: "detalhes_vaga.html"
     },
