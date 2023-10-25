@@ -173,7 +173,7 @@ function createCard(cardData) {
                 </div>
                 <div class="card-text-container">
                     <h3>${cardData.title}</h3>
-                    <a href="#" class="card-link">Leia mais</a>
+                    <a href="#" class="card-link"  style="color: white; text-decoration: none;" >Leia mais</a>
                 </div>
             </div>
         </article>
