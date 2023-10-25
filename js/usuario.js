@@ -17,7 +17,7 @@ if (userLogadoJSON) {
 function sair() {
     localStorage.removeItem('userToken');
     localStorage.removeItem('userLogado');
-    window.location.href = '../home.html';
+    window.location.href = '../index.html';
 }
 
 
